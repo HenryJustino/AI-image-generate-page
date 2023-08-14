@@ -59,14 +59,14 @@ function App() {
   return (
     <>
       <div className='flex justify-around w-full flex-col md:flex-row'>
-        <div className='w-full p-10'>
+        <div className='w-full md:w-1/2 p-10'>
           {/* Modal Start */}
           <p className='text-white mb-3'>Model</p>
           <div className="inset-0 items-center ">
             <button
               type="button"
               onClick={openModal}
-              className="rounded-md border-white border-2 bg-transparent px-4 py-2 text-sm font-medium text-white hover:bg-white hover:text-black focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 w-full flex items-center justify-between"
+              className="rounded-md border-white border-2 bg-transparent px-4 py-2 text-sm font-medium text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 w-full flex items-center justify-between"
             >
               <div className="flex items-center">
                 <div className="text-sm">
@@ -138,11 +138,11 @@ function App() {
 
           {/* Prompt Start */}
           <p className='text-white mb-2 mt-5'>Prompt</p>
-          <textarea className="bg-slate-700	 w-full text-white h-[100px] p-3 text-sm">A photo of a cute golden retriever</textarea>
+          <textarea className="bg-slate-700	 w-full text-white h-[100px] p-3 text-sm rounded-xl">A photo of a cute golden retriever</textarea>
           <button
             type="button"
             // onClick={}
-            className="rounded-md border-white border-2 bg-transparent px-4 py-2 text-sm font-medium text-white hover:bg-white hover:text-black focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 w-full flex items-center"
+            className="rounded-md border-white border-2 bg-transparent px-4 py-2 text-sm font-medium text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 w-full flex items-center"
           >
             <TwoDiceIcon className="h-6 w-6 m-0.5" />
             Random
@@ -151,7 +151,7 @@ function App() {
 
           {/* Negative Prompt Start */}
           <p className='text-white mb-3'>Negative Prompt</p>
-          <textarea className="bg-slate-700	 w-full text-white h-[100px] p-3 text-sm">bla bla bla bla</textarea>
+          <textarea className="bg-slate-700	 w-full text-white h-[100px] p-3 text-sm rounded-xl">bla bla bla bla</textarea>
           {/* Negative Prompt End */}
 
           {/* Generation Settings Start */}
@@ -320,7 +320,7 @@ function App() {
                           <button
                             type="button"
                             onClick={openLoraModal}
-                            className="rounded-md border-white border-2 bg-transparent px-4 py-2 text-sm font-medium text-white hover:bg-white hover:text-black focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 w-full flex items-center justify-between"
+                            className="rounded-md border-white border-2 bg-transparent px-4 py-2 text-sm font-medium text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 w-full flex items-center justify-between"
                           >
                             <div className="flex items-center">
                               <div className="text-sm">
@@ -398,14 +398,14 @@ function App() {
           </div>
           <button
             type="button"
-            className="inline-flex justify-center rounded-md border border-transparent bg-indigo-800 px-4 py-2 text-xl font-medium text-gray-300 hover:bg-gray-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-gray-500 focus-visible:ring-offset-2 w-full mt-8"
+            className="inline-flex justify-center rounded-md border border-transparent bg-indigo-800 px-4 py-2 text-xl font-medium text-gray-300 hover:bg-indigo-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-gray-500 focus-visible:ring-offset-2 w-full mt-8"
           // onClick={}
           >
             {/* Generation Settings End */}
             Generate
           </button>
         </div>
-        <div className='w-full p-20'>
+        <div className='w-full md:w-1/2 p-20'>
           <p className='text-white mb-3 text-2xl'>Output</p>
           <div className="flex rounded-xl shadow-md w-full h-96 justify-center items-center">
             <div>
